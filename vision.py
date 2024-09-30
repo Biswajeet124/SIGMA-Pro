@@ -10,10 +10,7 @@ import io
 load_dotenv()
 
 # Configure Gemini AI
-api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    st.error("Please set the GEMINI_API_KEY in your .env file.")
-    st.stop()
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 genai.configure(api_key=api_key)
 
