@@ -10,7 +10,7 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Set page config
 st.set_page_config(page_title="SIGMA Pro: AI Q&A Assistant", page_icon="https://i.postimg.cc/FsvsmXbC/pixelcut-export.png", layout="wide")
-st.load("https://i.postimg.cc/FsvsmXbC/pixelcut-export.png")
+st.logo("https://i.postimg.cc/FsvsmXbC/pixelcut-export.png")
 st.sidebar.markdown("SIGMA Pro")
 
 # Custom CSS for improved theming (unchanged)
